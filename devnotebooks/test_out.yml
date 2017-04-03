@@ -1,0 +1,9 @@
+links:
+- url: https://pypi.python.org/pypi
+  title: The Python package индекс website
+  notes: |
+    These are extra lines that would normally go below the link URL
+    via https://www.python.org/
+    code https://github.com/python/cpython
+- url: https://www.djangoproject.com/
+  title: Django web framework
