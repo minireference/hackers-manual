@@ -4,7 +4,7 @@ A collection of links to computer-related topics like programming, tooling, syst
 
 TODO:
 -----
-  - come up with RE to match all links and surrounding title + notes
+  - Setup basic Django site with markdown processing of each page
 
 
 Phase 1
