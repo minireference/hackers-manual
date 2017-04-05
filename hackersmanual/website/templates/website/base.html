@@ -1,0 +1,77 @@
+{% load static %}
+{# {% load render_bundle from webpack_loader %} #}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="{{ meta_description }}">
+    <meta name="author" content="Ivan Savov">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>{{ title }}</title>
+
+    <!-- Custom styles -->
+    {# {% render_bundle 'main' 'css' %} #}
+
+    {% block extrahead %}
+    {% endblock %}
+  </head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#scrollSpyingNavbar" data-offset="10">
+
+      {% block headernavbar %}
+      <header>
+        <nav id="scrollSpyingNavbar" class="navbar navbar-custom navbar-light navbar-toggleable bg-faded fixed-top">
+          <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand text-thin" href="/">Hacker's manual</a>
+
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+              <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">HOME</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      {% endblock %}
+
+
+      {% block maincontent %}
+
+        CONTENT GOES HERE!
+      
+      {% endblock %}
+
+
+
+
+      <br>
+      <br>
+      {% block footer %}
+
+      {% endblock %}    <!-- /footer -->
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    =============================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- scripts loaded here -->
+    {# {% render_bundle 'main' 'js' %} #}
+
+
+  </body>
+</html>

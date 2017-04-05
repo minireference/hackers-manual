@@ -1,0 +1,35 @@
+{% extends "website/base.html" %}
+
+{% block maincontent %}
+<div id="navbarSpacer"></div>
+
+<div class="container">
+
+    <div id="markdowpagecontainer">
+
+      <div id="mdcontentscontainer">
+        
+        {{ content_html|safe }}
+
+      </div>
+      
+      
+      <div class="linkscontainer">
+      <h3>Links:</h3>
+      <ul>
+        {% for link in metadata %}
+        <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            <p>{{ link.notes }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      </div>
+
+
+      <br/>
+
+    </div>
+
+</div><!-- /.container -->
+{% endblock %}
